@@ -1,0 +1,30 @@
+// Effects
+
+// Shadow
+.shadow-s {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+.shadow-m {
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.03), 
+                0px 12.963px 11.713px rgba(0, 0, 0, 0.0227778),
+                0px 7.7037px 6.37037px rgba(0, 0, 0, 0.0182222),
+                0px 4px 3.25px rgba(0, 0, 0, 0.015),
+                0px 1.62963px 1.62963px rgba(0, 0, 0, 0.0117778),
+                0px 0.37037px 0.787037px rgba(0, 0, 0, 0.00722222);
+}
+.shadow-l {
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.07),
+                0px 25.9259px 23.4259px rgba(0, 0, 0, 0.0659),
+                0px 15.4074px 12.7407px rgba(0, 0, 0, 0.0507),
+                0px 8px 6.5px rgba(0, 0, 0, 0.04),
+                0px 3.25926px 3.25926px rgba(0, 0, 0, 0.0293),
+                0px 0.740741px 1.57407px rgba(0, 0, 0, 0.0240741);
+}
+.shadow-xl {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.1),
+                0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0759259),
+                0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0607407),
+                0px 20px 13px rgba(0, 0, 0, 0.05),
+                0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0392593),
+                0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0240741);
+}

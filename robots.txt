@@ -2,4 +2,11 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: /src/
+Disallow: /dist/
+Disallow: /js/
+Disallow: /build/
+Disallow: /node_modules/
+Disallow: /img/
+Disallow: /build/
+Disallow: /pages/
