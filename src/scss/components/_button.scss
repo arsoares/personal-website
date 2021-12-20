@@ -1,0 +1,118 @@
+// Button
+
+@use '../abstracts/abstracts.scss' as *;
+
+// * Large button
+button.btn {
+    cursor: pointer;
+    background-color: none !important;
+    color: $color-gris--mid;
+    font-size: $size-22;
+    font-weight: $extrabold;
+    letter-spacing: -0.88px;
+    padding: 16px 22px 18px 22px;
+    border: 2px solid $color-gris--dim;
+    border-radius: 24px;
+        // Animation
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+}
+    // State: Hover
+    button.btn:hover {
+        color: $color-gris;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid $color-gris;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+    // State: Active
+    button.btn:active {
+        color: $color-gris--base;
+        background: none;
+        border: 2px solid $color-gris--base;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+
+// * Variation: Primary
+button.btn--primary {
+    background-color: $color-rouge;
+    border: 2px solid $color-rouge--mid;
+    color: $color-gris;
+    letter-spacing: -0.88px;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.20);
+}
+    // State: Hover
+    button.btn--primary:hover {
+        color: $color-gris;
+        background: $color-rouge--mid;
+        border: 2px solid $color-rouge--dim;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+    // State: Active
+    button.btn--primary:active {
+        color: $color-gris--base;
+        background: $color-rouge--base;
+        border: 2px solid $color-rouge--base;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+
+// * Variation: Tertiary
+button.btn--tertiary {
+    background-color: $color-gris;
+    border: 2px solid $color-gris--mid;
+    color: $color-rouge--dim;
+    letter-spacing: -0.88px;
+}
+    // State: Hover
+    button.btn--tertiary:hover {
+        color: $color-rouge--dim;
+        background-color: $color-gris--mid;
+        border: 2px solid $color-gris--dim;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+    // State: Active
+    button.btn--tertiary:active {
+        color: $color-black;
+        background-color: $color-gris--base;
+        border: 2px solid $color-gris--base;
+            // Animation 
+            -webkit-transition: all .25s;
+            -moz-transition: all .25s;
+            -ms-transition: all .25s;
+            -o-transition: all .25s;
+            transition: all .25s;
+    }
+
+// * Modifiers
+.icon--external::after {
+    margin-left: 12px;
+    font-weight: $extrabold;
+    content: "\2197";
+}

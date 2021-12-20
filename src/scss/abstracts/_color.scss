@@ -1,0 +1,29 @@
+// Color
+// Bleu
+$color-bleu--base: #0E1317;
+$color-bleu--dim: #1E2B38;
+$color-blue--mid: #1D3853;
+$color-bleu: #308CE7;
+// Gris
+$color-gris--base: #89838D;
+$color-gris--dim: #B0AAB5;
+$color-gris--mid: #DDDBE0;
+$color-gris: #F8F8F8;
+// Rouge
+$color-rouge--base: #1A0808;
+$color-rouge--dim: #4D1717;
+$color-rouge--mid: #742020;
+$color-rouge: #FF4C4C;
+// Neutral
+$color-black: #000000;
+$color-gray--dim: #575757;
+$color-gray--mid: #ABABAB;
+$color-white: #FFFFFF;
+
+// TODO: Add in more colors to the palette.
+
+// Semantic Color
+// * Set the page background color default.
+$backdrop: $color-bleu--base;
+// * Set the main branding color default.
+$brand: $color-rouge;
