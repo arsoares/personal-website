@@ -1,0 +1,264 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.leading--s {
+  margin-top: 16px;
+}
+
+.leading--m {
+  margin-top: 40px;
+}
+
+.leading--l {
+  margin-top: 80px;
+}
+
+.trailing--s {
+  margin-bottom: 16px;
+}
+
+.trailing--m {
+  margin-bottom: 40px;
+}
+
+.trailing--l {
+  margin-bottom: 80px;
+}
+
+.trailing--xl {
+  margin-bottom: 120px;
+}
+
+h1 {
+  font-family: "AGaramondPro-Regular", "Garamond", Georgia, serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.type--hero {
+  color: #FF4C4C;
+  letter-spacing: -3.2px;
+  line-height: 4rem;
+}
+
+.type--headline {
+  color: #DDDBE0;
+  font-size: 1.75rem;
+  letter-spacing: -0.92px;
+  line-height: 2rem;
+}
+
+.type--body {
+  font-family: "AGaramondPro-Regular", "Garamond", Georgia, serif;
+  color: #89838D;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  line-height: 2rem;
+  font-style: italic;
+}
+
+button.btn {
+  cursor: pointer;
+  background-color: none !important;
+  color: #DDDBE0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.88px;
+  padding: 16px 22px 18px 22px;
+  border: 2px solid #B0AAB5;
+  border-radius: 24px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+button.btn:hover {
+  color: #F8F8F8;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #F8F8F8;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button.btn:active {
+  color: #89838D;
+  background: none;
+  border: 2px solid #89838D;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button.btn--primary {
+  background-color: #FF4C4C;
+  border: 2px solid #742020;
+  color: #F8F8F8;
+  letter-spacing: -0.88px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+button.btn--primary:hover {
+  color: #F8F8F8;
+  background: #742020;
+  border: 2px solid #4D1717;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button.btn--primary:active {
+  color: #89838D;
+  background: #1A0808;
+  border: 2px solid #1A0808;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button.btn--tertiary {
+  background-color: #F8F8F8;
+  border: 2px solid #DDDBE0;
+  color: #4D1717;
+  letter-spacing: -0.88px;
+}
+
+button.btn--tertiary:hover {
+  color: #4D1717;
+  background-color: #DDDBE0;
+  border: 2px solid #B0AAB5;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button.btn--tertiary:active {
+  color: #000000;
+  background-color: #89838D;
+  border: 2px solid #89838D;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.icon--external::after {
+  margin-left: 12px;
+  font-weight: 700;
+  content: "↗";
+}
+
+body {
+  background-color: #0E1317;
+}

@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Austin R. Soares -- Designer, Developer, PM, Webmaster -- @austinsoares
+
+# THANKS
+    PEOPLE
+
+    TEACHINGS FROM...
+    Milan Savov - 2 SMARTEST WAYS TO STRUCTURE SASS - https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+    Geoff Graham - 'System Font Stack' - https://css-tricks.com/snippets/css/system-font-stack/
+    Josh Comeau - 'Josh's Custom CSS Reset' - https://www.joshwcomeau.com/css/custom-css-reset/
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

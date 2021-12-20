@@ -1,0 +1,29 @@
+{
+  "name": "v2022",
+  "version": "1.0.0",
+  "description": "Austin Soares is a product designer, developer, and photographer based in Cambridge, MA.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arsoares/v2022.git"
+  },
+  "author": "Austin R. Soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsoares/v2022/issues"
+  },
+  "homepage": "https://github.com/arsoares/v2022#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.0"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}

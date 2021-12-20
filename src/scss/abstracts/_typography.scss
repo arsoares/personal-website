@@ -1,0 +1,73 @@
+// Typography
+@use '_color.scss' as *;
+
+// Font Families
+$serif: "AGaramondPro-Regular", 'Garamond', Georgia, serif ;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$mono: "Courier New", monospace;
+// Font Weights
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 600;
+$extrabold: 700;
+$black: 900;
+// Font Size
+$size-xl: 5rem;
+$size-l: 3rem;
+$size-m: 1.75rem;
+$size-s: 1rem;
+$size-xs: .75rem;
+// Font Size Numbered
+$size-22: 22px;
+$size-32: 32px;
+$size-40: 40px;
+$size-56: 56px;
+$size-64: 64px;
+$size-80: 80px;
+
+// * General Heading Setup
+// Headings
+h1 {
+    font-family: $serif;
+    font-weight: $normal;
+    font-size: $size-xl;
+}
+h2 {
+    font-family: $sans-serif;
+    font-weight: $bold;
+    font-size: $size-l;
+}
+h3 {
+    font-family: $sans-serif;
+    font-weight: $semibold;
+    font-size: $size-m;
+}
+
+// Other
+* {
+    font-family: $sans-serif;
+    font-weight: $normal;
+    font-size: $size-s;
+}
+
+// * Specific Heading Setup
+.type--hero {
+    color: $brand;
+    letter-spacing: -3.2px;
+    line-height: 4rem;
+}
+.type--headline {
+    color: $color-gris--mid;
+    font-size: $size-m;
+    letter-spacing: -0.92px;
+    line-height: 2rem;
+}
+.type--body {
+    font-family: $serif;
+    color: $color-gris--base;
+    font-size: $size-22;
+    letter-spacing: -0.50px;
+    line-height: 2rem;
+    font-style: italic;
+}
