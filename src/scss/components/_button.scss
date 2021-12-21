@@ -5,7 +5,7 @@
 // * Large button
 button.btn {
     cursor: pointer;
-    background-color: none !important;
+    background: unset;
     color: $color-gris--mid;
     font-size: $size-22;
     font-weight: $extrabold;

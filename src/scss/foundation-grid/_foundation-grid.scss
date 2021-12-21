@@ -1,0 +1,61 @@
+//  Table of Contents:
+///
+///   1. Global
+///   2. Breakpoints
+///  56. Xy Grid
+
+// @use '../../../node_modules/foundation-sites/scss/util/util.scss' as *;
+
+/// Foundation
+/// ----------
+/// Source: http://foundation.zurb.com/docs/
+/// Notes:
+/// 1. Foundation's variables are imported first. We only import the variables
+///    needed for grid and flex classes.
+/// 2. Modify the _foundation.scss file to alter grid settings.
+/// 3. Only include XY Grid and Flex Classes.
+@use '../../../node_modules/foundation-sites/scss/foundation.scss' as *;
+/// 2. Breakpoints
+/// --------------
+$breakpoints: (
+  initial: 0,
+  tiny: 321px,
+  small: 641px,
+  medium: 769px,
+  large: 1025px,
+  full: 1201px,
+  xlarge: 1441px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (initial tiny small medium large);
+
+/// 56. Xy Grid
+/// -----------
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  initial: 40px,
+  medium: 40px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
+// Include grid classes.
+@include foundation-xy-grid-classes(
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: false
+);
+@include foundation-flex-classes;
+
+
+body {
+    @include xy-cell(12);
+}
