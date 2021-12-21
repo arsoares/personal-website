@@ -31,7 +31,7 @@ $size-80: 80px;
 h1 {
     font-family: $serif;
     font-weight: $normal;
-    font-size: $size-xl;
+    font-size: $size-64;
 }
 h2 {
     font-family: $sans-serif;
@@ -55,7 +55,7 @@ h3 {
 .type--hero {
     color: $brand;
     letter-spacing: -3.2px;
-    line-height: 4rem;
+    line-height: 3.75rem;
 }
 .type--headline {
     color: $color-gris--mid;
