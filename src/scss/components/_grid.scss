@@ -1,0 +1,71 @@
+// Grid (Portfolio)
+
+// Imports
+@use '../abstracts/_color.scss' as *;
+@use '../abstracts/_space.scss' as *;
+
+.grid-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .grid-item {
+    width: 50%;
+  } 
+  .grid-image--square {
+    min-height: 288px;
+    background: $color-rouge--dim;
+  }
+  .grid-image--square:before {
+    content: '';
+    float:left;
+    padding-top:100%;
+  }
+  .grid-type {
+    height: auto;
+    background: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 2rem;
+  }
+  .grid-edge {
+    padding-left: 0px;
+  } 
+  /* Flexbox Content Order */
+  .p1 {
+    order:1;
+  }
+  .p2 {
+    order:2;
+  }
+  .p3 {
+    order:3;
+  }
+  .p4 {
+    order:4;
+  }
+  
+  @media all and (max-width: 1023px) and (min-width: 0px) { 
+      /* grid */
+      .grid-system {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 718px;
+        margin: 0px auto 8rem auto;
+      }    
+      .grid-item {
+        width: 100%;
+      }
+      .grid-image--square {
+        order: 1;
+      }
+      .grid-type {
+        margin-top: $space--32;
+        order: 2;
+        padding: 0px;
+      }
+   }

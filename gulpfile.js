@@ -18,7 +18,7 @@ var sass = require('gulp-sass')(require('sass'));
  // * Working well!
  gulp.task('sass', function(){    
     return gulp.src('./src/scss/app.scss')       
-        .pipe(sass())       
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./dist/css/')); 
 });
 

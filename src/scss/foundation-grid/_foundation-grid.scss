@@ -4,8 +4,6 @@
 ///   2. Breakpoints
 ///  56. Xy Grid
 
-// @use '../../../node_modules/foundation-sites/scss/util/util.scss' as *;
-
 /// Foundation
 /// ----------
 /// Source: http://foundation.zurb.com/docs/
@@ -15,6 +13,7 @@
 /// 2. Modify the _foundation.scss file to alter grid settings.
 /// 3. Only include XY Grid and Flex Classes.
 @use '../../../node_modules/foundation-sites/scss/foundation.scss' as *;
+@use '../abstracts/color' as *;
 /// 2. Breakpoints
 /// --------------
 $breakpoints: (
@@ -55,7 +54,7 @@ $xy-block-grid-max: 8;
 );
 @include foundation-flex-classes;
 
-
 body {
     @include xy-cell(12);
 }
+

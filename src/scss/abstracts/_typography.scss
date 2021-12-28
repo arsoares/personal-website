@@ -19,6 +19,9 @@ $size-m: 1.75rem;
 $size-s: 1rem;
 $size-xs: .75rem;
 // Font Size Numbered
+$size-14: 14px;
+$size-16: 16px;
+$size-18: 18px;
 $size-22: 22px;
 $size-32: 32px;
 $size-40: 40px;
@@ -55,13 +58,13 @@ h3 {
 .type--hero {
     color: $brand;
     letter-spacing: -3.2px;
-    line-height: 3.75rem;
+    line-height: 4.125rem;
 }
 .type--headline {
     color: $color-gris--mid;
     font-size: $size-m;
     letter-spacing: -0.92px;
-    line-height: 2rem;
+    line-height: 2.125rem;
 }
 .type--body {
     font-family: $serif;

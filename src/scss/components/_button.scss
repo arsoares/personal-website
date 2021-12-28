@@ -2,8 +2,28 @@
 
 @use '../abstracts/abstracts.scss' as *;
 
+.btn-s {
+    cursor: pointer;
+    border: 0px;
+    font-size: $size-14;
+    font-weight: $extrabold;
+    background: $color-bleu--dim;
+    color: $color-gris--mid;
+    text-decoration: none;
+    padding: .75rem 1.25rem;
+}
+.btn-s:hover {
+    background: $color-bleu;
+    color: $color-white;
+}
+.btn-s:active {
+    background: $color-bleu--dim;
+    color: $color-gray--dim;
+}
+
+
 // * Large button
-button.btn {
+button.btn-l {
     cursor: pointer;
     background: unset;
     color: $color-gris--mid;
@@ -21,7 +41,7 @@ button.btn {
         transition: all 1s;
 }
     // State: Hover
-    button.btn:hover {
+    button.btn-l:hover {
         color: $color-gris;
         background: rgba(255, 255, 255, 0.05);
         border: 2px solid $color-gris;
@@ -33,7 +53,7 @@ button.btn {
             transition: all .25s;
     }
     // State: Active
-    button.btn:active {
+    button.btn-l:active {
         color: $color-gris--base;
         background: none;
         border: 2px solid $color-gris--base;
