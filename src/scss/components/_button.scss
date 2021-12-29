@@ -5,12 +5,12 @@
 .btn-s {
     cursor: pointer;
     border: 0px;
-    font-size: $size-14;
+    font-size: $size-16;
     font-weight: $extrabold;
     background: $color-bleu--dim;
     color: $color-gris--mid;
     text-decoration: none;
-    padding: .75rem 1.25rem;
+    padding: .75rem 1.25rem .8125rem 1.25rem;
 }
 .btn-s:hover {
     background: $color-bleu;
@@ -33,36 +33,18 @@ button.btn-l {
     padding: 16px 22px 18px 22px;
     border: 2px solid $color-gris--dim;
     border-radius: 24px;
-        // Animation
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 1s;
 }
     // State: Hover
     button.btn-l:hover {
         color: $color-gris;
         background: rgba(255, 255, 255, 0.05);
         border: 2px solid $color-gris;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
     // State: Active
     button.btn-l:active {
         color: $color-gris--base;
         background: none;
         border: 2px solid $color-gris--base;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
 
 // * Variation: Primary
@@ -78,24 +60,12 @@ button.btn--primary {
         color: $color-gris;
         background: $color-rouge--mid;
         border: 2px solid $color-rouge--dim;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
     // State: Active
     button.btn--primary:active {
         color: $color-gris--base;
         background: $color-rouge--base;
         border: 2px solid $color-rouge--base;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
 
 // * Variation: Tertiary
@@ -110,24 +80,12 @@ button.btn--tertiary {
         color: $color-rouge--dim;
         background-color: $color-gris--mid;
         border: 2px solid $color-gris--dim;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
     // State: Active
     button.btn--tertiary:active {
         color: $color-black;
         background-color: $color-gris--base;
         border: 2px solid $color-gris--base;
-            // Animation 
-            -webkit-transition: all .25s;
-            -moz-transition: all .25s;
-            -ms-transition: all .25s;
-            -o-transition: all .25s;
-            transition: all .25s;
     }
 
 // * Modifiers
@@ -135,4 +93,27 @@ button.btn--tertiary {
     margin-left: 12px;
     font-weight: $extrabold;
     content: "\2197";
+}
+
+// * Animation & Transitions
+button.btn-s, button.btn-l, button.btn--primary, button.btn--secondary, button.btn--tertiary {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;    
+}
+button.btn-s:hover, button.btn-l:hover, button.btn--primary:hover, button.btn--secondary:hover, button.btn--tertiary:hover {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+button.btn-s:active, button.btn-l:active, button.btn--primary:active, button.btn--secondary:active, button.btn--tertiary:active {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
 }

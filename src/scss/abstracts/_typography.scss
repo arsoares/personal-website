@@ -1,5 +1,6 @@
 // Typography
 @use '_color.scss' as *;
+@use '_effects.scss' as *;
 
 // Font Families
 $serif: "AGaramondPro-Regular", 'Garamond', Georgia, serif ;
@@ -12,6 +13,13 @@ $semibold: 500;
 $bold: 600;
 $extrabold: 700;
 $black: 900;
+// Font Styles
+$italic: italic;
+$underline: underline;
+$strike: line-through;
+.style--italic { font-style: $italic; }
+.style--underline { font-style: $underline; }
+.style--strike { font-style: $strike; }
 // Font Size
 $size-xl: 5rem;
 $size-l: 3rem;
@@ -28,6 +36,23 @@ $size-40: 40px;
 $size-56: 56px;
 $size-64: 64px;
 $size-80: 80px;
+// Extras
+::selection, ::-moz-selection {
+    background-color: $color-rouge--mid;
+    color: $color-rouge;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+// Defaults
+* {
+    font-family: $sans-serif;
+    font-weight: $normal;
+    font-size: $size-s;
+    // Default Color on Dark Background
+    color: $color-white;
+}
 
 // * General Heading Setup
 // Headings
@@ -35,30 +60,43 @@ h1 {
     font-family: $serif;
     font-weight: $normal;
     font-size: $size-64;
+    color: $brand;
+    // Special Attributes
+    letter-spacing: -3.2px;
+    line-height: 4.125rem;
 }
 h2 {
-    font-family: $sans-serif;
-    font-weight: $bold;
+    font-family: $serif;
+    font-weight: $normal;
     font-size: $size-l;
+    // Special Attributes
+    letter-spacing: -0.125rem;
+    line-height: 3.375rem;
 }
 h3 {
-    font-family: $sans-serif;
-    font-weight: $semibold;
-    font-size: $size-m;
-}
-
-// Other
-* {
-    font-family: $sans-serif;
+    font-family: $serif;
     font-weight: $normal;
-    font-size: $size-s;
+    font-size: $size-40;
+    // Special Attributes
+    letter-spacing: -0.109375rem;
+    line-height: 3.125rem;
+}
+h4 {
+    font-family: $serif;
+    font-weight: $normal;
+    font-size: $size-32;
+    // Special Attributes
+    letter-spacing: -0.075rem;
+    line-height: 2.5rem;
 }
 
 // * Specific Heading Setup
 .type--hero {
-    color: $brand;
-    letter-spacing: -3.2px;
-    line-height: 4.125rem;
+    font-size: $size-xl;
+    font-weight: $normal;
+    // Special Attributes
+    letter-spacing: -3px;
+    line-height: 5rem;
 }
 .type--headline {
     color: $color-gris--mid;
@@ -68,9 +106,16 @@ h3 {
 }
 .type--body {
     font-family: $serif;
-    color: $color-gris--base;
+    color: $color-gris--dim;
     font-size: $size-22;
     letter-spacing: -0.50px;
     line-height: 2rem;
-    font-style: italic;
+}
+.type--caption {
+    font-family: $sans-serif;
+    font-weight: $semibold;
+    color: $color-gris--dim;
+    font-size: $size-14;
+    letter-spacing: -0.025rem;
+    line-height: 1.625rem;
 }
