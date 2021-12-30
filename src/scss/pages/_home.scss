@@ -1,6 +1,12 @@
 // Home
 @use '../abstracts/abstracts.scss' as *;
 
+// Definitions
+$background--brand: $brand;
+$background--light: $color-gris;
+.background--brand { background-color: $background--brand;}
+.background--light { background-color: $background--light;}
+
 // General 
 body {
     background-color: $backdrop;
