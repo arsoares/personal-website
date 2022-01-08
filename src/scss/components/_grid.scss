@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative;
   }
   .grid-item {
     width: 50%;
@@ -26,6 +27,7 @@
   .grid-image--landscape {
     width: 100%;
     overflow: hidden;
+    
     // Default background
     background: $color-rouge--mid;
   }

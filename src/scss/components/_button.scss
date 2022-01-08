@@ -94,6 +94,11 @@ button.btn--tertiary {
     font-weight: $extrabold;
     content: "\2197";
 }
+.icon--circ-arrow::after {
+    margin-left: 12px;
+    font-weight: $extrabold;
+    content: "\f35a";
+}
 
 // * Animation & Transitions
 button.btn-s, button.btn-l, button.btn--primary, button.btn--secondary, button.btn--tertiary {
