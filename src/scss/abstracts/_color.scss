@@ -3,7 +3,7 @@
 // Bleu
 $color-bleu--base: #0E1317;
 $color-bleu--dim: #1E2B38;
-$color-blue--mid: #1D3853;
+$color-bleu--mid: #1D3853;
 $color-bleu: #308CE7;
 // Gris
 $color-gris--base: #7E7882;
@@ -28,3 +28,5 @@ $color-white: #FFFFFF;
 $backdrop: $color-bleu--base;
 // * Set the main branding color default.
 $brand: $color-rouge;
+
+// TODO: Add in default system with prefers dark appearance.

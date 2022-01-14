@@ -104,3 +104,5 @@ typings/
 
 # User
 .vscode
+docs
+local.pdf
