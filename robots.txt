@@ -10,3 +10,4 @@ Disallow: /node_modules/
 Disallow: /img/
 Disallow: /build/
 Disallow: /pages/
+Disallow: /docs/

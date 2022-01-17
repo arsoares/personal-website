@@ -1,6 +1,6 @@
 // Animations
 
-// General Fade In
+// * General Fade In
 body {
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s;
@@ -34,5 +34,15 @@ body {
     to   { opacity: 1; }
 }
 
-// Transitions
+// * Transitions (all)
+// Milliseconds
+$transition--250ms: all 250ms;
+$transition--500ms: all 500ms;
+$transition--750ms: all 750ms;
+// Seconds
+$transition--1s: all 1s;
+$transition--2s: all 2s;
+$transition--4s: all 4s;
+$transition--8s: all 8s;
 
+// * Delays

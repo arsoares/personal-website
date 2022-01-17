@@ -27,7 +27,6 @@
   .grid-image--landscape {
     width: 100%;
     overflow: hidden;
-    
     // Default background
     background: $color-rouge--mid;
   }
@@ -48,12 +47,12 @@
     padding-top: 150%;
   }
   .grid-type {
+    padding: 3rem;
     height: auto;
     background: none;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 3rem;
   }
   
   .grid-edge {

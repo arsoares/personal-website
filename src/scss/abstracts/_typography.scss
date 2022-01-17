@@ -50,7 +50,13 @@ $size-80: 80px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-// Appearances
+// Alignments
+$align--left: left;
+$align--center: center;
+$align--right: right;
+.align--left { text-align: $align--left; }
+.align--center { text-align: $align--center; }
+.align--right { text-align: $align--right; }
 
 // Defaults
 body {
