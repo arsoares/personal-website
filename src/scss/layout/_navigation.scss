@@ -1,1 +1,141 @@
 // Navigation
+
+@use '../abstracts/abstracts.scss' as *;
+
+// General 
+nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    position: fixed;
+    z-index: 100;
+    width: auto;
+}
+nav .navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+// Floating
+.floating {
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    // Set Boundaries
+    top: 8px;
+    left: 8px;
+    right: 8px;
+}
+
+// Fixed
+.fixed {
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    // Set Boundaries
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+// Sections
+.nav-logo-area, .nav-links-area {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-logo-area {
+    width: 80px;
+}
+.nav-links-area {
+    width: 100%;
+    margin-left: -90px;
+}   
+
+// Logo Setup
+.navbar-logo {
+    margin: 8px 0px 0px 64px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;     
+    position: relative;
+}
+
+// Link Setup
+.nav-links-area ul {
+    margin: 0 auto;
+}
+.nav-links-area li {
+    display: inline-flex;     
+    position: relative;
+    float: left;
+    padding: 16px 24px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-link--logo {
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: $color-gris--dim;
+    text-decoration: none;
+}
+.nav-link--current {
+    color: $color-white;
+    font-weight: $extrabold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 0px) { 
+    nav {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        position: fixed;
+        z-index: 100;
+        width: auto;
+    }
+    nav .navbar {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }    
+    .floating {
+        background-color: rgba(0, 0, 0, .7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 1.5rem;
+        // Set Boundaries
+        top: 8px;
+        left: 8px;
+        right: 8px;
+    }
+    .fixed {
+        background-color: rgba(0, 0, 0, .7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        // Set Boundaries
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .navbar-logo {
+        margin: 8px 0px 0px 24px;
+        width: 25px;
+        height: 24px;
+        display: inline-flex;     
+        position: relative;
+    }
+    .nav-links-area li {
+        display: inline-flex;     
+        position: relative;
+        float: left;
+        padding: 8px 12px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+}

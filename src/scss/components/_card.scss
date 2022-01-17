@@ -2,7 +2,6 @@
 
 @use '../abstracts/abstracts.scss' as *;
 
-
 .work-item {
     background-color: $color-bleu--dim !important;
     box-shadow: inset 0px 0px 0px 2px $color-bleu--mid;
@@ -19,7 +18,7 @@
 .work--detail {
     // display: inline-block;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     bottom: 0px;
     left: $space--40;
 }

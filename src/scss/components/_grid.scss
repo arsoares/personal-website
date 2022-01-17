@@ -1,14 +1,13 @@
 // Grid (Portfolio)
 
 // Imports
-@use '../abstracts/_color.scss' as *;
-@use '../abstracts/_space.scss' as *;
+@use '../abstracts/abstracts.scss' as *;
 
 .grid-system {
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
   }
   .grid-item {
     width: 50%;

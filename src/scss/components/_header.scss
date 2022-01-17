@@ -1,0 +1,14 @@
+// Header
+
+@use '../abstracts/abstracts.scss' as *;
+
+.hero {
+    background-color: $color-bleu--dim; 
+    height: 640px;
+    width: 100%;
+    text-align: center;
+}
+.hero h1 {
+    padding-top: 400px;
+    color: $color-white;
+}
