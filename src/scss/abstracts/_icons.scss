@@ -2,7 +2,7 @@
 @use '_color.scss' as *;
 
 // * General Setup
-.icon:after {
+.icon:after, .social:before {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -10,7 +10,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.arrow--right:after {
+.arrow--right--circle:after {
     padding-left: .75rem;
     padding-top: .25rem;
     display: inline-block;
@@ -23,7 +23,7 @@
     -o-transition: all 250ms;
     transition: all 250ms;  
 }
-.arrow--right:hover:after {
+.arrow--right--circle:hover:after {
     padding-left: 1rem;
     -webkit-transition: all 250ms;
     -moz-transition: all 250ms;
@@ -31,3 +31,87 @@
     -o-transition: all 250ms;
     transition: all 250ms;  
 }
+
+.arrow--right:after {
+    padding-left: .75rem;
+    padding-top: .25rem;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;   
+}
+    // .arrow--right:hover:after {
+    // padding-left: 1rem;
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+    // }
+
+// * Social Media Icons
+.social--linkedin:before {
+    padding-right: .5rem;
+    padding-top: .25rem;
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f08c";
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+}
+    // .social--linkedin:hover:before {
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+    // }
+.social--twitter:before {
+    padding-right: .5rem;
+    padding-top: .25rem;
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f099";
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+}
+    // .social--twitter:hover:before {
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+    // }
+.social--glass:before {
+    padding-right: .5rem;
+    padding-top: .25rem;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f030";
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+}
+    // .social--glass:hover:before {
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;  
+    // }

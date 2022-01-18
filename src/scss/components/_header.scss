@@ -3,12 +3,24 @@
 @use '../abstracts/abstracts.scss' as *;
 
 .hero {
-    background-color: $color-bleu--dim; 
+    background-color: $color-rouge--dim; 
     height: 640px;
     width: 100%;
     text-align: center;
+    width: 100%;
 }
 .hero h1 {
     padding-top: 400px;
     color: $color-white;
+}
+
+@media screen and (min-width: 2040px) {
+    .hero {
+        padding: 0px;
+        max-width: 2000px;
+        position: relative;
+        margin: 0px calc(100vw - 2000px);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
