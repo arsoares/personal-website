@@ -108,17 +108,12 @@ button.btn-s, button.btn-l, button.btn--primary, button.btn--secondary, button.b
     -o-transition: all 1s;
     transition: all 1s;    
 }
-button.btn-s:hover, button.btn-l:hover, button.btn--primary:hover, button.btn--secondary:hover, button.btn--tertiary:hover {
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
-}
+button.btn-s:hover, button.btn-l:hover, button.btn--primary:hover, button.btn--secondary:hover, button.btn--tertiary:hover,
+button.btn-s:focus, button.btn-l:focus, button.btn--primary:focus, button.btn--secondary:focus, button.btn--tertiary:focus,
 button.btn-s:active, button.btn-l:active, button.btn--primary:active, button.btn--secondary:active, button.btn--tertiary:active {
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    -ms-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -ms-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
 }

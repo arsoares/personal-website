@@ -27,13 +27,15 @@
   </head>
   <body>
         <!-- Begin Work Content -->
+        <a class="skip-main" href="#main">Skip to main content</a>
+
         <nav class="navbar fixed">
             <section class="nav-logo-area">
-                <a href="index.html" class="nav-link--logo" alt="Austin Soares Home">
-                    <object class="navbar-logo" type="image/svg+xml" data="img/logo.svg">
-                    <img srcset="img/logo@3x.png" width="44" height="44" alt="Logo">
-                    <img srcset="img/logo@2x.png" width="44" height="44" alt="Logo">
-                    </object>
+                <a href="/" title="Austin Soares" rel="home" class="index-link">
+                    <picture class="navbar-logo">
+                        <source type="image/svg+xml" srcset="img/logo.svg">
+                        <img src="path/to/logo-1x.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="Austin Soares - Home">
+                    </picture>
                 </a>
             </section>
             <section class="nav-links-area">
@@ -46,7 +48,7 @@
         </nav>
         <!-- Main Hero Area -->
         <section class="extend hero">
-            <h1>H1 Page Title</h1>
+            <h1 id="main" tabindex="-1">H1 Page Title</h1>
             <p class="type--body leading--m">Intro copy to help describe the content of the page</p>
         </section>
 

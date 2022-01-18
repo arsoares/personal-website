@@ -2,10 +2,4 @@
 
 @forward "_navigation.scss";
 @forward "_footer.scss";
-
-.extend {
-    flex: 0 0 auto;
-    width: calc(100% + 2.5rem);
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-}
+@forward '_structure.scss';
