@@ -38,8 +38,8 @@
     padding: 2.5rem;
     margin-bottom: 80px;
     h2 {
-        font-size: clamp(2.375rem, -0.25rem + 13.125vw, 5rem);
-        line-height: clamp(2.375rem, -0.25rem + 13.125vw, 5rem);
+        font-size: clamp(2.375rem, 1.0625rem + 5.25vw, 5rem);
+        line-height: clamp(2.375rem, 1.0625rem + 5.25vw, 5rem);
         padding: 2.5rem;
         padding-bottom: 8rem;
     }
@@ -58,8 +58,8 @@
         align-self: center;
         // Appearance
         color: $color-gray--dim;
-        font-size: 1.75rem;
-        line-height: 2rem;
+        font-size: clamp(1.125rem, 0.8125rem + 1.25vw, 1.75rem);
+        line-height: clamp(1.125rem, 0.8125rem + 1.25vw, 1.75rem);
         font-weight: $semibold;
         letter-spacing: -0.2px;
     }
