@@ -8,6 +8,6 @@ $background--light: $color-gris;
 .background--light { background-color: $background--light;}
 
 // General 
-body {
-    background-color: $backdrop;
+html {
+    background-color: $backdrop-light;
 }

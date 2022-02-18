@@ -64,7 +64,7 @@ body {
     font-weight: $normal;
     font-size: $size-s;
     // Default Color on Dark Background
-    color: $color-white;
+    color: $color-black;
 }
 
 // * General Heading Setup
@@ -81,10 +81,10 @@ h1 {
 h2 {
     font-family: $serif;
     font-weight: $normal;
-    font-size: $size-l;
+    font-size: $size-xl;
     // Special Attributes
     letter-spacing: -0.125rem;
-    line-height: 3.375rem;
+    line-height: 5rem;
 }
 h3 {
     font-family: $serif;

@@ -24,9 +24,36 @@ $color-white: #FFFFFF;
 
 // TODO: Add in more colors to the palette.
 
+// * Branding 
+.branding-seniorlink {
+    background: 
+        linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.50) 97%),
+        rgba(231, 245, 223, 1.00);
+    color: rgba(16, 32, 8, 1.00);
+}
+.branding-chewy {
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.50) 97%),
+        rgba(214, 225, 249, 1.00);
+    color: rgba(3, 20, 56, 1.00);
+}
+.branding-r149 {
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.50) 97%),
+        rgba(244, 244, 244, 1.00);
+    color: rgba(49, 49, 49, 1.00);
+}
+.branding-ifactory {
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.50) 97%),
+        rgba(255, 222, 222, 1.00);
+    color: rgba(50, 4, 10, 1.00);
+}
+
 // Semantic Color
 // * Set the page background color default.
 $backdrop: $color-bleu--base;
+$backdrop-light: $color-white;
 // * Set the main branding color default.
 $brand: $color-rouge;
 

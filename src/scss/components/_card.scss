@@ -25,3 +25,116 @@
 .work--detail p {
     font-family: $sans-serif;
 }
+
+
+//* Define the homepage cards
+
+:root {
+    --cta-height: 70px;
+}
+
+.card-highlight {
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    margin-bottom: 80px;
+    h2 {
+        font-size: clamp(2.375rem, -0.25rem + 13.125vw, 5rem);
+        line-height: clamp(2.375rem, -0.25rem + 13.125vw, 5rem);
+        padding: 2.5rem;
+        padding-bottom: 8rem;
+    }
+    .description {
+        // Set up grid
+        display: grid; 
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: 1fr; 
+        grid-column-gap: 16px;
+        grid-row-gap: 16px; 
+        // Special
+        padding-left: 2.5rem;
+    }
+    .role {
+        // Grid classes
+        align-self: center;
+        // Appearance
+        color: $color-gray--dim;
+        font-size: 1.75rem;
+        line-height: 2rem;
+        font-weight: $semibold;
+        letter-spacing: -0.2px;
+    }
+    .cta {
+        // Reset button
+        background: rgba(255,255,255,1);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.12);
+        border-radius: 1.5rem;
+        text-decoration: none;
+        // Grid
+        place-self: center end;
+        // Custom Styling
+        font-size: 1.375rem;
+        font-weight: $extrabold;
+        color: rgba(37, 37, 37, 1.00);
+        padding: 1.125rem 2rem;
+    }
+    .cta:hover {
+        background: rgba(255,255,255,1.0);
+        box-shadow: 0 1px 8px 0 rgba(0,0,0,0.08);
+    }
+    .cta:active {
+        background: rgba(255,255,255,.80);
+        box-shadow: unset;
+        color: rgba(37, 37, 37,.60);
+    }
+    .cta, .cta:hover {
+        // Animations
+        -webkit-transition: $transition--500ms;
+        -moz-transition: $transition--500ms;
+        -ms-transition: $transition--500ms;
+        -o-transition: $transition--500ms;
+        transition: $transition--500ms;
+    }
+}
+@media screen and (max-width: 64rem) {
+    .card-highlight {
+        padding: 2.5rem;
+    }
+    h2 {
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 50rem) {
+    .card-highlight {
+            padding: 2.5rem;
+            margin-bottom: 40px;
+        h2 {
+            padding: 0px;
+            padding-bottom: 5rem;
+        }
+        .description {
+            // Grid
+            display: grid; 
+            grid-template-columns: 2fr 1fr; 
+            grid-template-rows: repeat(2, 1fr); 
+            grid-column-gap: 0px;
+            grid-row-gap: 16px; 
+            // Custom
+            padding-left: 0px;
+        }
+        .role {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            font-size: 1.125rem;
+            letter-spacing: -0.13px;
+            justify-self: stretch;
+            justify-content: center;
+        }
+        .cta {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-self: stretch;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
