@@ -73,7 +73,9 @@ h1 {
     font-family: $serif;
     font-weight: $normal;
     font-size: $size-64;
-    color: $brand;
+    // color: $brand;
+    color: $color-gris--base;
+    
     // Special Attributes
     letter-spacing: -3.2px;
     line-height: 4.125rem;
@@ -112,14 +114,16 @@ h4 {
     line-height: 5rem;
 }
 .type--headline {
-    color: $color-gris--mid;
+    // color: $color-black;
+    color: rgba(0,0,0,.8);
     font-size: $size-m;
     letter-spacing: -0.92px;
     line-height: 2.125rem;
 }
 .type--body {
     font-family: $serif;
-    color: $color-gris--dim;
+    // color: $color-gris--dim;
+    color: rgba(0,0,0,.7);
     font-size: $size-22;
     letter-spacing: -0.50px;
     line-height: 2rem;
@@ -131,7 +135,7 @@ h4 {
 .type--caption {
     font-family: $sans-serif;
     font-weight: $semibold;
-    color: $color-gris--dim;
+    color: $color-gris--base;
     font-size: $size-14;
     letter-spacing: -0.025rem;
     line-height: 1.625rem;

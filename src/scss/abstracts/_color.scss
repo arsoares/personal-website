@@ -58,3 +58,8 @@ $backdrop-light: $color-white;
 $brand: $color-rouge;
 
 // TODO: Add in default system with prefers dark appearance.
+
+
+.logo--primary {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(14deg) brightness(103%) contrast(101%);
+}
