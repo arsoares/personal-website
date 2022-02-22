@@ -1,6 +1,7 @@
 // Footer
 
 @use '../abstracts/abstracts.scss' as *;
+@use '../components/components.scss' as *;
 
 // * General
 
@@ -11,7 +12,7 @@ footer {
     }
     // Footer Grid Setup
     .footer-groups {
-        display: grid; 
+        display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: 1fr; 
         grid-column-gap: 4px;
@@ -40,7 +41,7 @@ footer {
         line-height: 32px;
         font-weight: $extrabold;
         letter-spacing: -0.8px;
-        padding-top: 2.5rem;
+        padding-top: 4rem;
     }
     .footer-subheadline {
         color: $color-gray--dim;
@@ -131,4 +132,3 @@ footer {
         }
     }
 }
-

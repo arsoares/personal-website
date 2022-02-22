@@ -32,6 +32,21 @@
     transition: all 250ms;  
 }
 
+.icon-menu:before {
+    padding-right: 1rem;
+    margin-top: 2px;
+    // padding-top: .25rem;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    // -webkit-transition: all 250ms;
+    // -moz-transition: all 250ms;
+    // -ms-transition: all 250ms;
+    // -o-transition: all 250ms;
+    // transition: all 250ms;   
+}
+
 .arrow--right:after {
     padding-left: .75rem;
     padding-top: .25rem;

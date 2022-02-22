@@ -64,35 +64,7 @@
         letter-spacing: -0.2px;
     }
     .cta {
-        // Reset button
-        background: rgba(255,255,255,1);
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.12);
-        border-radius: 1.5rem;
-        text-decoration: none;
-        // Grid
         place-self: center end;
-        // Custom Styling
-        font-size: 1.375rem;
-        font-weight: $extrabold;
-        color: rgba(37, 37, 37, 1.00);
-        padding: 1.125rem 2rem;
-    }
-    .cta:hover {
-        background: rgba(255,255,255,1.0);
-        box-shadow: 0 1px 8px 0 rgba(0,0,0,0.08);
-    }
-    .cta:active {
-        background: rgba(255,255,255,.80);
-        box-shadow: unset;
-        color: rgba(37, 37, 37,.60);
-    }
-    .cta, .cta:hover {
-        // Animations
-        -webkit-transition: $transition--500ms;
-        -moz-transition: $transition--500ms;
-        -ms-transition: $transition--500ms;
-        -o-transition: $transition--500ms;
-        transition: $transition--500ms;
     }
 }
 @media screen and (max-width: 64rem) {
