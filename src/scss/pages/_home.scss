@@ -3,13 +3,13 @@
 
 // * Header
 header {
-    width: 85vmin;
+    max-width: 100vmin;
     // Main headers
     .header-headline {
         font-family: $sans-serif;
         color: $color-black;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: clamp(1.5rem, 4.2vw - 0.2rem, 2.5rem);
+        line-height: clamp(1.75rem, 5.2vw - 0.3rem, 3rem);
         font-weight: $extrabold;
         letter-spacing: -0.8px;
         // Spacing
@@ -17,11 +17,32 @@ header {
     }
     .header-subheadline {
         color: $color-gray--dim;
-        font-size: clamp(1.125rem, 0.8125rem + 1.25vw, 1.75rem);
-        line-height: clamp(1.125rem, 0.8125rem + 1.25vw, 1.75rem);
+        font-size: clamp(1.125rem, 2.6vw + 0.1rem, 1.75rem);
         font-weight: $semibold;
         letter-spacing: -0.2px;
         // Spacing
         padding-bottom: 10rem;
+    }
+}
+@media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
+    header {
+        width: 90vw;
+        .header-headline {
+            padding: 7.5rem 0rem 2rem 0rem;
+        }
+        .header-subheadline {
+            padding-bottom: 5rem;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
+    header {
+        width: 100%;
+        .header-headline {
+            padding: 5rem 0rem 1.5rem 0rem;
+        }
+        .header-subheadline {
+            padding-bottom: 5rem;
+        }
     }
 }

@@ -5,22 +5,49 @@
 
 nav {
     // Grid setup
-    display: grid; 
-    grid-template-columns: 1fr 7fr; 
-    grid-template-rows: 1fr; 
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 80px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     // Style
-    margin-top: 80px;
-    .nav-logo-link {
+    margin-top: 5rem;
+    .nav-logo {
+        // Grid setup
+        display: grid;
         grid-area: 1 / 1 / 2 / 2;
-        .nav-logo {
-            place-self: center start;
-            width: 3rem;
-            }
+        align-content: center;
+    }
+    .nav-logo:hover {
+        filter: invert(54%) sepia(7%) saturate(398%) hue-rotate(233deg) brightness(96%) contrast(81%);
+        transform: scale(0.92);
+    }
+    .nav-logo:active {
+        opacity: 0.80;
     }
     .nav-menu-button {
         grid-area: 1 / 2 / 2 / 3;
-        place-self: center end;
+        place-self: end;
     }
+}
+
+@media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
+    nav {
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
+    nav {
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+.nav-logo, .nav-logo:hover, .nav-logo:active {
+    -webkit-transition: $transition--500ms;
+    -moz-transition: $transition--500ms;
+    -ms-transition: $transition--500ms;
+    -o-transition: $transition--500ms;
+    transition: $transition--500ms;
 }

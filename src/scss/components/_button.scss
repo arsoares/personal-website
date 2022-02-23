@@ -11,8 +11,8 @@
     text-decoration: none;
     padding: 1.125rem 2rem;
     border-radius: 1.5rem;
-    // Default styles
-    color: rgba(37, 37, 37, 1.00);
+    // Default styles`
+    color: rgba(37,37,37,1.00);
     background: rgba(255,255,255,1.00);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.12);
     border: 4px solid transparent;
@@ -20,10 +20,10 @@
 .cta:hover {
     background: rgba(255,255,255,1.00);
     box-shadow: 0 1px 8px 0 rgba(0,0,0,0.08);
-    transform: scale(0.98);
+    transform: scale(0.92);
 }
 .cta:active {
-    color: rgba(37, 37, 37,0.60);
+    color: rgba(37,37,37,0.60);
     background: rgba(255,255,255,0.80);
     box-shadow: unset;
 }
@@ -44,7 +44,7 @@
 }
 .cta-primary:hover {
     background: rgba(51,51,51,1.00);
-    transform: scale(0.98);
+    transform: scale(0.92);
 }
 .cta-primary:active {
     color: rgba(255,255,255,0.80);
@@ -58,10 +58,10 @@
 }
 .cta-secondary:hover {
     background: rgba(233,233,233,1.00);
-    transform: scale(0.98);
+    transform: scale(0.92);
 }
 .cta-secondary:active {
-    color: rgba(255,255,255,0.80);
+    color: rgba(37,37,37,0.80);
     background: rgba(233,233,233,0.80);
 }
 
