@@ -6,6 +6,7 @@
 // * General
 
 footer {
+    margin-top: 15rem;
     hr {
         border: 1px solid rgba(221, 219, 224, 1.00);
         border-radius: 100px;
@@ -15,7 +16,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: 1fr; 
-        grid-column-gap: 4px;
+        grid-column-gap: 24px;
         grid-row-gap: 0px;
         .footer-group-work, .footer-group-about, .footer-group-contact {
             padding: 2.5rem;
@@ -59,6 +60,20 @@ footer {
         text-decoration: none;
         color: rgba(0,0,0,1);
         letter-spacing: -0.4px;
+        border-bottom: 3px solid transparent;
+    }
+    .footer-group-heading:hover, .footer-group-heading:focus {
+        color: rgba(32,32,32,1.00);
+        border-bottom: 3px solid $color-black;
+        box-sizing: border-box;
+    }
+    // Animation
+    .footer-group-heading, .footer-group-heading:hover, .footer-group-heading:focus {
+        -webkit-transition: $transition--500ms;
+        -moz-transition: $transition--500ms;
+        -ms-transition: $transition--500ms;
+        -o-transition: $transition--500ms;
+        transition: $transition--500ms;
     }
     // Footer Link Appearance
     .footer-link-list {
@@ -74,14 +89,29 @@ footer {
             text-decoration: none;
             color: rgba(138, 131, 142, 1.00);
             letter-spacing: -0.16px;
+            border-bottom: 3px solid transparent;
+        }
+        li a:hover, li a:focus {
+            color: rgba(0,0,0,1.00);
+            border-bottom: 3px solid $color-black;
+            box-sizing: border-box;
+        }
+        // Animation
+        li a, li a:hover, li a:focus {
+            -webkit-transition: $transition--500ms;
+            -moz-transition: $transition--500ms;
+            -ms-transition: $transition--500ms;
+            -o-transition: $transition--500ms;
+            transition: $transition--500ms;
         }
     }
 }
 
 // * Responsive: 1024px
 
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
     footer {
+        margin-top: 10rem;
         .footer-group-work, .footer-group-about, .footer-group-contact {
             padding: 1.5rem !important;
         }
@@ -97,15 +127,15 @@ footer {
 
 // * Responsive: 800px
 
-@media screen and (max-width: 50rem) { 
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
     footer {
+        margin-top: 10rem;
         // Mobile Footer Grid Setup
         .footer-groups {
             display: grid; 
             grid-template-columns: 1fr; 
             grid-template-rows: repeat(3, 1fr); 
-            grid-column-gap: 4px;
-            grid-row-gap: 4px; 
+            grid-row-gap: 8px; 
             .footer-group-work, .footer-group-about, .footer-group-contact {
                 padding: 2.5rem;
                 background-color: rgba(248, 248, 248, 1.00);
@@ -132,3 +162,4 @@ footer {
         }
     }
 }
+
