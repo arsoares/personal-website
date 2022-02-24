@@ -112,6 +112,27 @@ footer {
 @media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
     footer {
         margin-top: 10rem;
+        // Mobile Footer Grid Setup
+        .footer-groups {
+            display: grid; 
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(3, 1fr); 
+            grid-row-gap: 8px; 
+            .footer-group-work, .footer-group-about, .footer-group-contact {
+                padding: 2.5rem;
+                background-color: rgba(248, 248, 248, 1.00);
+                border-radius: 1.5rem;
+            }
+            .footer-group-work {
+                grid-area: 1 / 1 / 2 / 2; 
+            } 
+            .footer-group-about {
+                grid-area: 2 / 1 / 3 / 2; 
+            } 
+            .footer-group-contact {       
+                grid-area: 3 / 1 / 4 / 2; 
+            } 
+        }
         .footer-group-work, .footer-group-about, .footer-group-contact {
             padding: 1.5rem !important;
         }

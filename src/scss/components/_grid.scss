@@ -94,3 +94,42 @@
         padding: 0px;
       }
    }
+
+
+
+   // * Home Grid
+.interests-grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr); 
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.interest-sq-1, .interest-sq-2, .interest-sq-3, .interest-sq-4, .interest-rec-1, .interest-rec-2 {
+  display: flex;
+}
+.interest-sq-1 { 
+  background-color: lightgreen;
+  grid-area: 1 / 1 / 3 / 2; 
+} 
+.interest-sq-2 { 
+  background-color: lightcoral;
+  grid-area: 1 / 2 / 3 / 3; 
+} 
+.interest-sq-3 { 
+  background-color: lightyellow;
+  grid-area: 3 / 3 / 5 / 4; 
+} 
+.interest-sq-4 {
+  background-color: lightblue;
+  grid-area: 3 / 4 / 5 / 5;
+}
+.interest-rec-1 { 
+  background-color: lemonchiffon;
+  grid-area: 1 / 3 / 3 / 5; 
+} 
+.interest-rec-2 { 
+  background-color: lightgray;
+  grid-area: 3 / 1 / 5 / 3; 
+} 
+ 
