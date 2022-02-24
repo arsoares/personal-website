@@ -77,6 +77,14 @@
 }
 
 // * Button modifiers
+.cta-small {
+    font-family: $sans-serif;
+    font-weight: $extrabold;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: .875rem 1.5rem;
+    border-radius: 100px; 
+}
 .icon--external::after {
     margin-left: 12px;
     font-weight: $extrabold;
@@ -87,7 +95,6 @@
     font-weight: $extrabold;
     content: "\f35a";
 }
-
 .icon--menu::before {
     margin-left: 12px;
     font-weight: $extrabold;

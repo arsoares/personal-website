@@ -48,11 +48,7 @@ $size-40: 40px;
 $size-56: 56px;
 $size-64: 64px;
 $size-80: 80px;
-// Extras
-::selection, ::-moz-selection {
-    background-color: $color-rouge--mid;
-    color: $color-rouge;
-}
+
 // Alignments
 $align--left: left;
 $align--center: center;

@@ -7,3 +7,8 @@
 @use 'components/components.scss' as *;
 @use 'layout/layout.scss' as *;
 @use 'pages/pages.scss' as *;
+
+::selection {
+    background-color: rgba(255, 222, 71, 1.00) !important;
+    color: rgba(66, 39, 0, 1.00) !important;
+}
