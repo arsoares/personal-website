@@ -1,0 +1,48 @@
+// Errors
+@use '../abstracts/abstracts.scss' as *;
+
+// * Header
+header {
+    max-width: 100vmin;
+    // Main headers
+    .error-headline {
+        font-family: $sans-serif;
+        color: $color-black;
+        font-size: clamp(10rem, -6.6406rem + 41.6667vw, 20rem);
+        line-height: clamp(10rem, -6.6406rem + 41.6667vw, 20rem);
+        font-weight: $black;
+        letter-spacing: -12px;
+        // Spacing
+        padding: 5rem 0rem 2.5rem 0rem;
+    }
+    .header-subheadline {
+        color: $color-gray--dim;
+        font-size: clamp(1.125rem, 2.6vw + 0.1rem, 1.75rem);
+        font-weight: $semibold;
+        letter-spacing: -0.2px;
+        // Spacing
+        padding-bottom: 5rem;
+    }
+}
+@media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
+    header {
+        width: 90vw;
+        .error-headline {
+            padding: 2.5rem 0rem 2rem 0rem;
+        }
+        .header-subheadline {
+            padding-bottom: 2.5rem;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
+    header {
+        width: 100%;
+        .error-headline {
+            padding: 2.5rem 0rem 1.5rem 0rem;
+        }
+        .header-subheadline {
+            padding-bottom: 2.5rem;
+        }
+    }
+}
