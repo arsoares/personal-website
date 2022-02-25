@@ -8,6 +8,13 @@
 @use 'layout/layout.scss' as *;
 @use 'pages/pages.scss' as *;
 
+// System
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Accessibility
 ::selection {
     background-color: rgba(255, 222, 71, 1.00) !important;
     color: rgba(66, 39, 0, 1.00) !important;

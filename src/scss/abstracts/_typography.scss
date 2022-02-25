@@ -2,12 +2,6 @@
 @use '_color.scss' as *;
 @use '_effects.scss' as *;
 
-:root {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
 // Font Families
 $serif: "AGaramondPro-Regular", 'Garamond', Georgia, serif ;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
