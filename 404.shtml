@@ -42,8 +42,8 @@
           </nav>
           <!-- * Page Header * -->
           <header class="page-header">
-            <h1 class="error-headline">404</h1>
-            <p class="header-subheadline">This page doesn't exist, or it was misplaced. Let's get you back to where you need to be.</p>
+            <h1 class="error-headline type-monster">404</h1>
+            <p class="header-subheadline type-body">This page doesn't exist, or it was misplaced. <br><span class="type-body-strong">Let's get you back to where you need to be.</span></p>
             <a class="cta cta-primary" href="/">Go home</a>
           </header>
 

@@ -6,6 +6,7 @@
 $serif: "AGaramondPro-Regular", 'Garamond', Georgia, serif ;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $mono: "Courier New", monospace;
+
 // Font Weights
 $light: 300;
 $normal: 400;
@@ -19,6 +20,7 @@ $black: 900;
 .style--bold { font-weight: $bold; }
 .style--extrabold { font-weight: $extrabold; }
 .style--black { font-weight: $black; }
+
 // Font Styles
 $italic: italic;
 $underline: underline;
@@ -26,13 +28,20 @@ $strike: line-through;
 .style--italic { font-style: $italic; }
 .style--underline { font-style: $underline; }
 .style--strike { font-style: $strike; }
+
+// Appearance
+$on-light: $color-black;
+$on-dark: $color-white;
+.on-light { color: $color-black; }
+.on-dark { color: $color-white; }
+
 // Font Size
 $size-xl: 5rem;
 $size-l: 3rem;
 $size-m: 1.75rem;
 $size-s: 1rem;
 $size-xs: .75rem;
-// Font Size Numbered
+// Font Sizes Numbered
 $size-14: 14px;
 $size-16: 16px;
 $size-18: 18px;
@@ -51,85 +60,86 @@ $align--right: right;
 .align--center { text-align: $align--center; }
 .align--right { text-align: $align--right; }
 
-// Defaults
-body {
+// * Type Classes
+
+// Special
+.type-monster {
     font-family: $sans-serif;
-    font-weight: $normal;
-    font-size: $size-s;
-    // Default Color on Dark Background
-    color: $color-black;
+    font-weight: $black;
+    font-size: clamp(10rem, -6.6406rem + 41.6667vw, 20rem); // 320 -> 160
+    line-height: clamp(7.5rem, -6.4365rem + 34.8958vw, 15.875rem); // 254 -> 120
+    letter-spacing: clamp(-0.75rem, 0.498rem + -3.125vw, -1.5rem); // -24 -> -12
+    text-transform: uppercase;
 }
 
-// * General Heading Setup
-// Headings
-h1 {
+// Hero
+.type-hero-1, .type-hero-2, .type-hero-3 {
     font-family: $serif;
-    font-weight: $normal;
-    font-size: $size-64;
-    // color: $brand;
-    color: $color-gris--base;
-    
-    // Special Attributes
-    letter-spacing: -3.2px;
-    line-height: 4.125rem;
+    font-weight: $semibold;
+    color: $on-light;
 }
-h2 {
-    font-family: $serif;
-    font-weight: $normal;
-    font-size: $size-xl;
-    // Special Attributes
-    letter-spacing: -0.125rem;
-    line-height: 5rem;
+.type-hero-1 {
+    font-size: clamp(4.75rem, -2.3223rem + 17.7083vw, 9rem);
+    line-height: clamp(4rem, -2.0322rem + 15.1042vw, 7.625rem);
+    letter-spacing: clamp(-0.0625rem, 0.0415rem + -0.2604vw, -0.125rem); // -2 -> -1
 }
-h3 {
-    font-family: $serif;
-    font-weight: $normal;
-    font-size: $size-40;
-    // Special Attributes
-    letter-spacing: -0.109375rem;
-    line-height: 3.125rem;
+.type-hero-2 {
+    font-size: clamp(2.375rem, -1.9932rem + 10.9375vw, 5rem);
+    line-height: clamp(2.5rem, -1.6602rem + 10.4167vw, 5rem);
+    letter-spacing: clamp(-0.046875rem, 0.0311rem + -0.1953vw, -0.09375rem); // -1.5 -> -0.75
 }
-h4 {
-    font-family: $serif;
-    font-weight: $normal;
-    font-size: $size-32;
-    // Special Attributes
-    letter-spacing: -0.075rem;
-    line-height: 2.5rem;
+.type-hero-3 {
+    font-size: clamp(2.375rem, -0.3291rem + 6.7708vw, 4rem);
+    line-height: clamp(2.5rem, 0.0039rem + 6.25vw, 4rem);
+    letter-spacing: clamp(-0.046875rem, 0.0311rem + -0.1953vw, -0.09375rem); // -1.5 -> -0.75
 }
 
-// * Specific Heading Setup
-.type--hero {
-    font-size: $size-xl;
-    font-weight: $normal;
-    // Special Attributes
-    letter-spacing: -3px;
-    line-height: 5rem;
+// Title
+.type-title-1, .type-title-2, .type-title-3 {
+    font-family: $sans-serif;
+    font-weight: 800;
+    color: $on-light;
 }
-.type--headline {
-    // color: $color-black;
-    color: rgba(0,0,0,.8);
-    font-size: $size-m;
-    letter-spacing: -0.92px;
-    line-height: 2.125rem;
+.type-title-1 {
+    font-size: clamp(3rem, -1.1602rem + 10.4167vw, 5.5rem);
+    line-height: clamp(3.125rem, -1.0352rem + 10.4167vw, 5.625rem);
+    letter-spacing: clamp(-0.04rem, -0.0566rem + 0.0417vw, -0.03rem); // -0.64 -> -0.48
 }
-.type--body {
-    font-family: $serif;
-    // color: $color-gris--dim;
-    color: rgba(0,0,0,.7);
-    font-size: $size-22;
-    letter-spacing: -0.50px;
-    line-height: 2rem;
+.type-title-2 {
+    font-size: clamp(2.25rem, -0.6621rem + 7.2917vw, 4rem);
+    line-height: clamp(2.5rem, -0.6201rem + 7.8125vw, 4.375rem);
+    letter-spacing: clamp(-0.03rem, -0.0466rem + 0.0417vw, -0.02rem); // -0.48 -> -0.32
+    font-weight: $extrabold;
 }
-.type--body .style--bold {
-    font-weight: $bold;
+.type-title-3 {
+    font-size: clamp(1.625rem, 0.1689rem + 3.6458vw, 2.5rem);
+    line-height: clamp(2rem, 0.3359rem + 4.1667vw, 3rem);
+    letter-spacing: clamp(-0.02rem, -0.0366rem + 0.0417vw, -0.01rem); // -0.32 -> -0.16
+    font-weight: $extrabold;
+}
+
+// Body
+.type-body-strong, .type-body, .type-body-small {
     font-family: $sans-serif;
 }
-.type--caption {
-    font-family: $sans-serif;
+.type-body-strong {
+    font-size: clamp(1.375rem, 0.751rem + 1.5625vw, 1.75rem);
+    line-height: clamp(1.875rem, 0.835rem + 2.6042vw, 2.5rem);
+    letter-spacing: clamp(-0.015rem, -0.0233rem + 0.0208vw, -0.01rem); // -0.24 -> -0.16
+    font-weight: $extrabold;
+    color: $on-light;
+}
+.type-body {
+    font-size: clamp(1.375rem, 0.751rem + 1.5625vw, 1.75rem);
+    line-height: clamp(1.875rem, 0.835rem + 2.6042vw, 2.5rem);
+    letter-spacing: clamp(-0.015rem, -0.0233rem + 0.0208vw, -0.01rem); // -0.24 -> -0.16
     font-weight: $semibold;
     color: $color-gris--base;
-    font-size: $size-14;
-    letter-spacing: -0.025rem;
-    line-height: 1.625rem;
+}
+.type-body-small {
+    font-size: clamp(1.125rem, 0.709rem + 1.0417vw, 1.375rem);
+    line-height: clamp(1.625rem, 1.001rem + 1.5625vw, 2rem);
+    letter-spacing: clamp(-0.01rem, -0.0183rem + 0.0208vw, -0.005rem); // -0.16 -> -0.08
+    font-weight: $semibold;
+    color: $color-gray--dim;
 }
