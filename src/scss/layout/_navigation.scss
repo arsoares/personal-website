@@ -62,10 +62,11 @@ a.skip-main:focus, a.skip-main:active {
     height: auto;
     overflow: auto;
     margin-top: 8px;
-    padding: 8px 16px   ;
+    padding: 8px 16px;
     text-align:center;
-    font-size: 1rem;
-    font-weight: $extrabold;
+    font-size: 1.25rem;
+    font-family: $sans-serif;
+    font-weight: $black;
     z-index: 999;
 }
 
