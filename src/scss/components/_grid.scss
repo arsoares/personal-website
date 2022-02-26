@@ -3,6 +3,10 @@
 // Imports
 @use '../abstracts/abstracts.scss' as *;
 
+:root {
+  --content-size: height: fit-content;
+}
+
 // * General Grid
 .general-grid {
   // Item Setup
@@ -26,9 +30,6 @@
     h1, h1, h3, h4, h5, h6 {
       margin-bottom: 1.5rem;
     }
-    p {
-      // margin-bottom: 1.5rem;
-    }
   }
   // Mosaic: R1: Sq Sq Rec, R2: Rec Sq Sq
   .grid-style--mosiac {
@@ -49,29 +50,29 @@
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    grid-column-gap: 24px;
-    grid-row-gap: 24px; 
-    .grid-item-1 { grid-area: 1 / 1 / 2 / 2; } // Square
-    .grid-item-2 { grid-area: 1 / 2 / 2 / 3; } // Square 
-    .grid-item-3 { grid-area: 2 / 1 / 3 / 2; } // Square 
-    .grid-item-4 { grid-area: 2 / 2 / 3 / 3; } // Square 
-    .grid-item-5 { grid-area: 1 / 3 / 3 / 5; } // Large Square or Text
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    .grid-item-1 { grid-area: 1 / 1 / 2 / 2; } 
+    .grid-item-2 { grid-area: 1 / 2 / 2 / 3; } 
+    .grid-item-3 { grid-area: 2 / 1 / 3 / 2; } 
+    .grid-item-4 { grid-area: 2 / 2 / 3 / 3; } 
+    .grid-item-5 { grid-area: 1 / 3 / 3 / 5; } 
   }
   // Mosaic Feature (Reversed): 1 Lg Sq and 4 Sm Sq 
   .grid-style--mosiac-feature-reverse {
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    grid-column-gap: 24px;
-    grid-row-gap: 24px; 
-    .grid-item-1 { grid-area: 1 / 1 / 3 / 3; } // Large Square or Text
-    .grid-item-2 { grid-area: 1 / 3 / 2 / 4; } // Square 
-    .grid-item-3 { grid-area: 1 / 4 / 2 / 5; } // Square 
-    .grid-item-4 { grid-area: 2 / 3 / 3 / 4; } // Square 
-    .grid-item-5 { grid-area: 2 / 4 / 3 / 5; } // Square 
+    grid-column-gap: 8px;
+    grid-row-gap: 8px; 
+    .grid-item-1 { grid-area: 1 / 1 / 3 / 3; } 
+    .grid-item-2 { grid-area: 1 / 3 / 2 / 4; } 
+    .grid-item-3 { grid-area: 1 / 4 / 2 / 5; } 
+    .grid-item-4 { grid-area: 2 / 3 / 3 / 4; } 
+    .grid-item-5 { grid-area: 2 / 4 / 3 / 5; }
   }
   // Bilateral: 2 Lg Sq 
-  .grid-style--bilateral {
+  .grid-style--bilateral, .grid-style--bilateral-reverse  {
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
@@ -120,13 +121,11 @@
   .general-grid {
     .grid-item-text {
       padding: 0rem;
+      border-radius: 0rem;
       align-self: start;
-      height: fit-content;
+      padding: .5rem 1rem 5rem 1rem;
       h1, h1, h3, h4, h5, h6 {
-        margin-bottom: 1rem;
-      }
-      p {
-        margin-bottom: 1rem;
+        margin: 1.5rem 0rem 1rem 0rem;
       }
     }
     .grid-style--mosiac {
@@ -145,35 +144,44 @@
     .grid-style--mosiac-feature {
       display: grid; 
       grid-template-columns: repeat(2, 1fr); 
-      grid-template-rows: repeat(4, 1fr); 
+      grid-template-rows: repeat(2, 1fr) var(--content-size);
       grid-column-gap: 8px;
-      grid-row-gap: 8px;
+      grid-row-gap: 8px; 
       .grid-item-1 { grid-area: 1 / 1 / 2 / 2; } 
       .grid-item-2 { grid-area: 1 / 2 / 2 / 3; } 
       .grid-item-3 { grid-area: 2 / 1 / 3 / 2; } 
       .grid-item-4 { grid-area: 2 / 2 / 3 / 3; } 
-      .grid-item-5 { grid-area: 3 / 1 / 5 / 3; } 
+      .grid-item-5 { grid-area: 3 / 1 / 4 / 3; }       
     }
     .grid-style--mosiac-feature-reverse {
       display: grid; 
       grid-template-columns: repeat(2, 1fr); 
-      grid-template-rows: repeat(4, 1fr); 
+      grid-template-rows: repeat(2, 1fr) var(--content-size);
       grid-column-gap: 8px;
       grid-row-gap: 8px; 
-      .grid-item-1 { grid-area: 1 / 1 / 3 / 3; } 
-      .grid-item-2 { grid-area: 3 / 1 / 4 / 2; } 
-      .grid-item-3 { grid-area: 3 / 2 / 4 / 3; } 
-      .grid-item-4 { grid-area: 4 / 1 / 5 / 2; } 
-      .grid-item-5 { grid-area: 4 / 2 / 5 / 3; } 
+      .grid-item-1 { grid-area: 3 / 1 / 4 / 3; } 
+      .grid-item-2 { grid-area: 1 / 1 / 2 / 2; } 
+      .grid-item-3 { grid-area: 1 / 2 / 2 / 3; } 
+      .grid-item-4 { grid-area: 2 / 1 / 3 / 2; } 
+      .grid-item-5 { grid-area: 2 / 2 / 3 / 3; }
     }
     .grid-style--bilateral {
       display: grid; 
-      grid-template-columns: 1fr; 
-      grid-template-rows: repeat(4, 1fr); 
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(2, 1fr) var(--content-size);
       grid-column-gap: 8px;
-      grid-row-gap: 8px; 
-      .grid-item-1 { grid-area: 1 / 1 / 3 / 2; } 
-      .grid-item-2 { grid-area: 3 / 1 / 5 / 2; } 
+      grid-row-gap: 8px;
+      .grid-item-1 { grid-area: 1 / 1 / 3 / 3; } 
+      .grid-item-2 { grid-area: 3 / 1 / 4 / 3; }  
+    }
+    .grid-style--bilateral-reverse {
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(2, 1fr) var(--content-size);
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+      .grid-item-1 { grid-area: 3 / 1 / 4 / 3; } 
+      .grid-item-2 { grid-area: 1 / 1 / 3 / 3; } 
     }
     .grid-style--trilateral {
       display: grid; 
