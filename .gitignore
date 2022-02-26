@@ -103,6 +103,7 @@ typings/
 .tern-port
 
 # User
+.DS_Store
 .vscode
 docs
 local.pdf
