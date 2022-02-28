@@ -45,7 +45,6 @@ nav {
     }
     .close-button:before {
       padding-right: 1rem;
-      margin-top: 3px;
       display: inline-block;
       font-size: 22px;
       font-family: "Font Awesome 5 Free";
@@ -81,16 +80,13 @@ nav {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         li {
-            animation: fadeInRight .5s ease forwards;
-            animation-delay: .35s;
+            animation: fadeInRight 500ms ease forwards;
+            animation-delay: 250ms;
                 &:nth-of-type(2) {
-                    animation-delay: .4s;
+                    animation-delay: 350ms;
                 }
                 &:nth-of-type(3) {
-                    animation-delay: .45s;
-                }
-                &:nth-of-type(4) {
-                    animation-delay: .50s;
+                    animation-delay: 450ms;
                 }
             }
       }
@@ -101,20 +97,36 @@ nav {
         display: inline-block;
         position: relative;
         list-style: none;
-        padding: 10rem 0rem 0rem 0rem;
+        padding: 16rem 0rem 0rem 0rem;
         padding-left: 1.5rem;
         li {
             position: relative;
             opacity: 0;
             text-align: left;
             a {
+                display: grid;
+                transform: translate(0px, 0); 
                 color: $color-black;
                 font-family: $sans-serif;
                 font-weight: 800;
                 font-size: clamp(3rem, -1.1602rem + 10.4167vw, 5.5rem);
                 letter-spacing: clamp(-0.04rem, -0.0566rem + 0.0417vw, -0.03rem);
                 text-decoration: none;
+            }
+            a:hover {
+                display: grid;
+                color: $color-gray--dim;
+                transform: translate(10px, 0); 
+                font-family: $sans-serif;
+                font-weight: 800;
             }     
+            a, a:hover {
+              -webkit-transition: $transition--500ms;
+              -moz-transition: $transition--500ms;
+              -ms-transition: $transition--500ms;
+              -o-transition: $transition--500ms;
+              transition: $transition--500ms;
+            }
           }
       }
     }
@@ -135,11 +147,11 @@ nav {
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        left: 20%;
+        left: 2.5rem;
     }
     100% {
         opacity: 1;
-        left: 0;
+        left: 0rem;
     }
 }
 
@@ -147,10 +159,20 @@ nav {
     nav {
         margin-top: 1.5rem;
     }
+    .overlay {
+      ul {
+        padding: 12rem 0rem 0rem 1.5rem;
+      }
+    }
 }
 @media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
     nav {
         margin-top: 1.5rem;
+    }
+    .overlay {
+      ul {
+        padding: 12rem 0rem 0rem 1.5rem;
+      }
     }
     .frozen-nav {
       position: sticky; 
