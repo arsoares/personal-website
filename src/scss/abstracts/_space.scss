@@ -11,11 +11,14 @@ $space--80: 80px;
 $space--120: 120px;
 
 // Leading
-.leading--s {
+.leading--xs {
     margin-top: $space--16;
 }
-.leading--m {
+.leading--s {
     margin-top: $space--40;
+}
+.leading--m {
+    margin-top: $space--64;
 }
 .leading--l {
     margin-top: $space--80;
@@ -23,13 +26,19 @@ $space--120: 120px;
 .leading--xl {
     margin-top: $space--120;
 }
+.leading--200 {
+    margin-top: 200px;
+}
 
 // Trailing
-.trailing--s {
+.trailing--xs {
     margin-bottom: $space--16;
 }
-.trailing--m {
+.trailing--s {
     margin-bottom: $space--40;
+}
+.trailing--m {
+    margin-bottom: $space--64;
 }
 .trailing--l {
     margin-bottom: $space--80;
