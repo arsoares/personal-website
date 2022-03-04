@@ -180,6 +180,23 @@ nav {
     }
 }
 
+// * Section Navigation
+
+.section-nav {
+    list-style-type: none;
+    padding-left: 0px;
+    text-decoration: none;
+    li {
+      padding-bottom: 1.5rem;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: $color-black;
+      }
+    }
+}
+
+
 // * Skip to main content
 a.skip-main {
     left:-999px;
@@ -216,3 +233,4 @@ a.skip-main:focus, a.skip-main:active {
     -o-transition: $transition--500ms;
     transition: $transition--500ms;
 }
+
