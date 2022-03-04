@@ -11,6 +11,7 @@
     text-decoration: none;
     padding: 1.125rem 2rem;
     border-radius: 1.5rem;
+    display: inline-block;
     cursor: pointer;
     // Default styles`
     color: rgba(37,37,37,1.00);
@@ -64,6 +65,19 @@
 .cta-secondary:active {
     color: rgba(37,37,37,0.80);
     background: rgba(233,233,233,0.80);
+}
+.cta-disabled {
+    background: unset;
+    color: rgba(37,37,37,0.50);
+    border: 2px solid rgba(37,37,37,0.25);
+    box-shadow: unset;
+}
+.cta-disabled:hover, .cta-disabled:active {
+    color: rgba(37,37,37,0.50);
+    background: unset;
+    box-shadow: unset;
+    transform: scale(1);
+    cursor: default;
 }
 
 // * Button animations
