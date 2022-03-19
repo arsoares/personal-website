@@ -189,14 +189,20 @@ nav {
     li {
       padding-bottom: 1.5rem;
       text-decoration: none;
+      display: grid;
+      // transform: translate(0px, 0); 
+      min-width: 50%;
       a {
         text-decoration: none;
         color: $color-black;
-        transform: translate(0px, 0); 
       }
       a:hover {
-        transform: translate(10px, 0); 
+        color: $color-gray--dim;
       }
+    }
+    li:hover {
+      display: grid;
+      transform: translate(.5rem, 0); 
     }
 }
 
@@ -231,9 +237,9 @@ a.skip-main:focus, a.skip-main:active {
 
 // * Animation and transitions
 .nav-logo, .nav-logo:hover, .nav-logo:active, 
-.section-nav a, .section-nav a:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.section-nav a, .section-nav li, li:hover {
+    // -webkit-backface-visibility: hidden;
+    // backface-visibility: hidden;
     -webkit-transition: $transition--500ms;
     -moz-transition: $transition--500ms;
     -ms-transition: $transition--500ms;
