@@ -18,6 +18,31 @@ a.anchor {
     visibility: hidden;
 }
 
+// * Smooth Scroll for Anchors
+html {
+    scroll-behavior: smooth;
+}
+:target:before {
+    content: "";
+    display: block;
+    height: 5rem;
+    margin: -5rem 0 0;
+}
+
+// * Text Width
+.max-text-width {
+    max-width: 64rem;
+}
+.readable-text-width {
+    max-width: 56rem;
+}
+.compact-text-width {
+    max-width: 48rem;
+}
+.caption-text-width {
+    max-width: 32rem;
+}
+
 // * Rules
 hr {
     border: 1px solid rgba(221, 219, 224, 1.00);
