@@ -52,10 +52,11 @@
       </div>
     </div>
 
-    <!-- End Home Content -->
+    <!-- End Error Content -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
