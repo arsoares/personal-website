@@ -4,7 +4,7 @@ var sass = require('gulp-sass')(require('sass'));
  // Simple Print
  // * Working well!
  gulp.task('hello', async function() {
-   console.log('Hey Austin');
+   console.log('All set');
  });
 
  // Watch for Changes
@@ -23,7 +23,7 @@ var sass = require('gulp-sass')(require('sass'));
 });
 
  // Live Browser Reload
- // TODO ADD BROWSER RELOAD
+// TODO: Add this in
 
  // Run everything at once
  // * Working well!
