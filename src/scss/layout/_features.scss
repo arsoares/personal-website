@@ -1,0 +1,35 @@
+// Features
+@use '../abstracts/abstracts.scss' as *;
+
+// * Back to Top
+.back-to-top {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    padding: .75rem 1.25rem;
+    opacity: 100%;
+    transition: opacity 0.5s;
+    border: .5px solid rgba(221, 219, 224, 1.00);
+}
+.hidden {
+    opacity: 0%;
+}
+
+// * Scroll Position (Progress Bar)
+.progress-bar {
+    height: .5rem;
+    // background: rgba(221, 219, 224, 1.00);
+    background: $color-rouge;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+// * Responsive Changes
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
+    .back-to-top {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+}

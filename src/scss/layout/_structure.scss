@@ -47,16 +47,8 @@ html {
 hr {
     border: 1px solid rgba(221, 219, 224, 1.00);
     border-radius: 4px;
-    &.rule--s {
-        border: 0.5rem solid rgba(221, 219, 224, 1.00);
-    }
-    &.rule--m {
-        border: 1rem solid rgba(248, 248, 248, 1.00);
-    }
-    &.rule--l {
-        border: 1.5rem solid rgba(248, 248, 248, 1.00);
-    }
-    &.rule--xl {
-        border: 2.5rem solid rgba(248, 248, 248, 1.00);
-    }
+    &.rule--s {border: 0.5rem solid rgba(221, 219, 224, 1.00);}
+    &.rule--m {border: 1rem solid rgba(248, 248, 248, 1.00);}
+    &.rule--l {border: 1.5rem solid rgba(248, 248, 248, 1.00);}
+    &.rule--xl {border: 2.5rem solid rgba(248, 248, 248, 1.00);}
 }

@@ -1,4 +1,5 @@
 // Space
+@use '_breakpoints.scss' as *;
 
 // General definitions
 $space--8: 8px;
@@ -45,4 +46,20 @@ $space--120: 120px;
 }
 .trailing--xl {
     margin-bottom: $space--120;
+}
+
+@media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
+    // Leading
+    .leading--xs {margin-top: .5rem}
+    .leading--s {margin-top: 1.25rem}
+    .leading--m {margin-top: 2rem}
+    .leading--l {margin-top: 2.5rem}
+    .leading--xl {margin-top: 3.75rem}
+    .leading--200 {margin-top: 6.25rem}
+    // Trailing
+    .trailing--xs {margin-bottom: .5rem}
+    .trailing--s {margin-bottom: 1.25rem}
+    .trailing--m {margin-bottom: 2rem}
+    .trailing--l {margin-bottom: 2.5rem}
+    .trailing--xl {margin-bottom: 3.75rem}
 }
