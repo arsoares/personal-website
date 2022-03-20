@@ -9,9 +9,9 @@
     <!-- Page Title -->
     <title>Austin Soares &mdash; Page Not Found</title>
     <!-- Site Identity -->
-    <link rel="icon" href="img/favicon.png" sizes="32x32" />
-    <link rel="icon" href="img/favicon@2x.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="img/favicon@2x.png" />
+    <link rel="icon" href="/img/favicon.png" sizes="32x32" />
+    <link rel="icon" href="/img/favicon@2x.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/img/favicon@2x.png" />
     <!-- Site Metadata -->
     <meta name="author" content="Austin Soares">
     <meta name="description" content="Austin Soares is a product designer, developer, and photographer based in Cambridge, MA.">
@@ -35,8 +35,8 @@
           <nav>
             <a href="/" class="nav-logo" title="Austin Soares" rel="home" class="index-link">
               <picture>
-                  <source type="image/svg+xml" srcset="img/logo.svg">
-                  <img src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="Austin Soares - Home">
+                  <source type="image/svg+xml" srcset="/img/logo.svg">
+                  <img src="/img/logo.png" srcset="/img/logo@2x.png 2x, /img/logo@3x.png 3x" alt="Austin Soares - Home">
               </picture>
             </a>
             <!-- <a class="nav-menu-button cta cta-secondary icon-menu" href="">Menu</a> -->
@@ -44,7 +44,7 @@
           <!-- * Page Header * -->
           <header class="page-header">
             <h1 class="error-headline type-monster">404</h1>
-            <p class="header-subheadline type-body">This page doesn't exist, or it was misplaced. <br><span class="type-body-strong">Let's get you back to where you need to be.</span></p>
+            <p class="header-subheadline type-body-strong">This page doesn't exist, or it was misplaced. <br><span class="type-body-small leading--xs">Let's get you back to where you need to be.</span></p>
             <a class="cta cta-primary" href="/">Go home</a>
           </header>
 
