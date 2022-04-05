@@ -1,6 +1,7 @@
 // Typography
 @use '_color.scss' as *;
 @use '_effects.scss' as *;
+@use '_animations.scss' as *;
 
 // Font Families
 $serif: "AGaramondPro-Regular", 'Garamond', Georgia, serif ;
@@ -56,9 +57,9 @@ $size-80: 80px;
 $align--left: left;
 $align--center: center;
 $align--right: right;
-.align--left { text-align: $align--left; }
-.align--center { text-align: $align--center; }
-.align--right { text-align: $align--right; }
+.align--left { text-align: $align--left !important; }
+.align--center { text-align: $align--center !important; }
+.align--right { text-align: $align--right !important; }
 
 // * Type Classes
 
@@ -77,6 +78,13 @@ $align--right: right;
     font-family: $serif;
     font-weight: $semibold;
     color: $on-light;
+    a {
+        color: $on-light;
+        text-decoration: unset;
+    }
+    a:hover {
+        color: $color-gris--base;
+    }
 }
 .type-hero-1 {
     font-size: clamp(4.75rem, -2.3223rem + 17.7083vw, 9rem);
@@ -99,6 +107,13 @@ $align--right: right;
     font-family: $sans-serif;
     font-weight: 800;
     color: $on-light;
+    a {
+        color: $on-light;
+        text-decoration: unset;
+    }
+    a:hover {
+        color: $color-gris--base;
+    }
 }
 .type-title-1 {
     font-size: clamp(3rem, -1.1602rem + 10.4167vw, 5.5rem);
@@ -121,6 +136,13 @@ $align--right: right;
 // Body
 .type-body-strong, .type-body, .type-body-small {
     font-family: $sans-serif;
+    a {
+        color: unset;
+        text-decoration: unset;
+    }
+    a:hover {
+        color: $color-gris--base;
+    }
 }
 .type-body-strong {
     font-size: clamp(1.375rem, 0.751rem + 1.5625vw, 1.75rem);
@@ -142,4 +164,17 @@ $align--right: right;
     letter-spacing: clamp(-0.01rem, -0.0183rem + 0.0208vw, -0.005rem); // -0.16 -> -0.08
     font-weight: $semibold;
     color: $color-gray--dim;
+}
+
+// * Type animations
+.type-hero-1, .type-hero-2, .type-hero-3, 
+.type-title-1, .type-title-2, .type-title-3, 
+.type-body-strong, .type-body, .type-body-small {
+    a, a:hover {
+        -webkit-transition: $transition--500ms;
+        -moz-transition: $transition--500ms;
+        -ms-transition: $transition--500ms;
+        -o-transition: $transition--500ms;
+        transition: $transition--500ms;
+    }
 }

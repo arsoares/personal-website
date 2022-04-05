@@ -68,6 +68,17 @@
         white-space: nowrap;
     }
 }
+.highlight-abbreviated {
+    border: 2px solid #F8F8F8;
+    margin-top: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    .description {
+        padding-left: 0rem;
+        .role {
+            align-self: center;
+        }
+    }
+}
 
 @media screen and (max-width: $breakpoint--medium-max) and (min-width: $breakpoint--medium-min) {
     .card-highlight {
@@ -79,6 +90,10 @@
         .description {
             padding-left: 1rem;
         }
+    }
+    .highlight-abbreviated {
+        margin-top: 1.5rem;
+        padding: 1.5rem;
     }
 }
 
@@ -114,6 +129,10 @@
         justify-self: stretch;
         justify-content: center;
         text-align: center;
+    }
+    .highlight-abbreviated {
+        margin-top: 1.5rem;
+        padding: 1.5rem;
     }
 }
 }
