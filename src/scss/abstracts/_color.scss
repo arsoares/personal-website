@@ -80,6 +80,12 @@ $col-zach: #DBC3BD;
 $col-paper: #F1F0EE;
 .col-paper { background-color: $col-paper; }
 
+// * Pay
+.col-pay-cashapp {background-color: rgba(0, 222, 0, 0.10);}
+.col-pay-paypal {background-color: rgba(10, 45, 147, 0.10);}
+.col-pay-venmo {background-color: rgba(0, 156, 215, 0.10);}
+
+
 // * Branding 
 .branding-seniorlink {
     background: 
