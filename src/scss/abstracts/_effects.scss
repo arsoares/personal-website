@@ -31,16 +31,16 @@
 
 // Corners
 .radius-s {
-    border-radius: .5rem;
+    border-radius: .5rem !important;
 }
 .radius-m {
-    border-radius: 1rem;    
+    border-radius: 1rem !important;    
 }
 .radius-l {
-    border-radius: 1.5rem;        
+    border-radius: 1.5rem !important;        
 }
 .radius-xl {
-    border-radius: 2.5rem;
+    border-radius: 2.5rem !important;
 }
 .radius-max {
     border-radius: 100rem !important;
