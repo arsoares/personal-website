@@ -15,7 +15,7 @@ footer {
         grid-column-gap: 24px;
         grid-row-gap: 0px;
         .footer-group-work, .footer-group-about, .footer-group-contact {
-            padding: 2.5rem;
+            padding: 1.5rem;
             background-color: rgba(248, 248, 248, 1.00);
             border-radius: 1.5rem;
         }
@@ -30,7 +30,7 @@ footer {
         } 
     }
     // Footer Appearance
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
     // Footer Headings Appearance
     .footer-headline {
         color: $color-black;
