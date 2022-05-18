@@ -48,6 +48,14 @@ $space--120: 120px;
     margin-bottom: $space--120;
 }
 
+// Special Spacing
+.leading--combined {
+    margin-top: $space--24;
+}
+.trailing--combined {
+    margin-bottom: $space--24;
+}
+
 @media screen and (max-width: $breakpoint--small-max) and (min-width: $breakpoint--small-min) {
     // Leading
     .leading--xs {margin-top: .5rem}
@@ -56,10 +64,12 @@ $space--120: 120px;
     .leading--l {margin-top: 2.5rem}
     .leading--xl {margin-top: 3.75rem}
     .leading--200 {margin-top: 6.25rem}
+    .leading--combined {margin-top: .5rem}
     // Trailing
     .trailing--xs {margin-bottom: .5rem}
     .trailing--s {margin-bottom: 1.25rem}
     .trailing--m {margin-bottom: 2rem}
     .trailing--l {margin-bottom: 2.5rem}
     .trailing--xl {margin-bottom: 3.75rem}
+    .trailing--combined {margin-top: .5rem}
 }
